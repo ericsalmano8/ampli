@@ -1,9 +1,9 @@
-version: 1
-env:
-  variables:
-    key: value
+version: 0.1
 frontend:
   phases:
+    preBuild:
+      commands:
+        - yarn install
     build:
       commands:
-        - npm run build
+        - ls
